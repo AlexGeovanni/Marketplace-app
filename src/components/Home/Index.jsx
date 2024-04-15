@@ -11,7 +11,7 @@ export default function Home(){
                 <div className="mt-3">
                  <p>Solo para Tijuana,BC.</p>
                  <button type="button" 
-                    className+"btn btn-primary mt-1">
+                    className="btn btn-primary mt-1">
                     Registrate
                  </button>
                   
