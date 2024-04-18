@@ -1,8 +1,8 @@
-import { FaRegUserCircle } from "react-icons/fa";
+import { PiUserCircleLight } from "react-icons/pi";
 export default function UserDropdown(){
     return(
         <div className="dropdown-center cp">
-          <FaRegUserCircle className="user-icon " data-bs-toggle="dropdown" aria-expanded="false" />
+          <PiUserCircleLight className="user-icon " data-bs-toggle="dropdown" aria-expanded="false" />
         <ul className="dropdown-menu">
           <li>
             <a className="dropdown-item" href="#">

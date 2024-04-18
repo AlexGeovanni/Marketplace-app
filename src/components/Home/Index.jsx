@@ -1,27 +1,24 @@
 import Header from "../Header/Index";
 
-
 export default function Home() {
   return (
     <>
       <Header />
-      <section className="bg-dange px-4 ">
-        <div className="row rounded-3 overflow-hidden">
-          <div className="text-white col-6 text-home d-flex flex-column justify-content-center">
+      <section className="seccions bg-dange px-3 px-lg-4 ">
+        <div 
+        className="container-home rounded-3  justify-content-center py-md-3 py-lg-5">
+          <div className="text-home d-flex flex-column justify-content-center px-4 py-3 rounded-3">
             <h1>Local Marketplace</h1>
             <div>
               <p>Descubre locales de en Tijuana, BC.</p>
             </div>
-            <button className="btn btn-primary  w-50 py-2">Comprar ahora</button>
-          </div>
-          <div className="col-6 p-0">
-            <div className="img__home ">
-              <img src="../../../public/img-5.jpg" alt="" />
-            </div>
+            <button className="btn w-50 w-lg-25 btn-primary d-inline py-2">
+              Comprar ahora
+            </button>
           </div>
         </div>
       </section>
-      <section className="px-4 mt-5">
+      <section className="seccions px-3 px-lg-4 mt-5">
         <h2 className="fs-3">Lo que te puede interesar</h2>
         <div className="d-flex flex-wrap gap-4">
           <div className="cp border">
