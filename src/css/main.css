@@ -6,7 +6,7 @@
   height: 250px;
   margin: auto;
   color: #ffffff;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../assets/img-11.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../assets/img-13.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -6162,9 +6162,9 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 45%;
   bottom: 1.25rem;
-  left: 15%;
+  left: 45%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
