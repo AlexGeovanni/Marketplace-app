@@ -2,6 +2,9 @@ import img from "../../assets/img-13.jpeg";
 import { BsFilter } from "react-icons/bs";
 import { IoIosFlash } from "react-icons/io";
 import AsideFilter from "./Aside-filter";
+
+import { Link } from "react-router-dom";
+
 export default function ViewProducts() {
   return (
     <>
@@ -37,7 +40,9 @@ export default function ViewProducts() {
               <BsFilter className="cp icon-filter" />
             </div>
             <AsideFilter />
-            <div className="opacity-75 fw-semibold d-none d-lg-block">Productos total:15</div>
+            <div className="opacity-75 fw-semibold d-none d-lg-block">
+              Productos total:15
+            </div>
           </header>
           <div className="products__container ">
             <div className="row g-2 g-md-3">
@@ -47,93 +52,95 @@ export default function ViewProducts() {
                     <IoIosFlash className="icon-off text-dark  " />
                     <p className="m-0">-20%</p>
                   </div>
-                  <div className="img__card-product">
+                  <Link to={"/detail"} className="img__card-product">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
-                      <span className="text-decoration-line-through text-danger me-2">$MXN150</span>
+                      <span className="text-decoration-line-through text-danger me-2">
+                        $MXN150
+                      </span>
                       <p className="fw-bold d-inline m-0">$MXN100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product  rounded  d-flex flex-column align-items-stretch">
-                  <div className="img__card-product ">
+                  <Link to={"/detail"} className="img__card-product ">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
                       <p className="fw-bold m-0">$100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product  rounded  d-flex flex-column align-items-stretch">
-                  <div className="img__card-product">
+                  <Link to={"/detail"} className="img__card-product">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
                       <p className="fw-bold m-0">$100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product  rounded  d-flex flex-column align-items-stretch">
-                  <div className="img__card-product">
+                  <Link to={"/detail"} className="img__card-product">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
                       <p className="fw-bold m-0">$100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product  rounded  d-flex flex-column align-items-stretch">
-                  <div className="img__card-product">
+                  <Link to={"/detail"} className="img__card-product">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
                       <p className="fw-bold m-0">$100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product  rounded  d-flex flex-column align-items-stretch">
-                  <div className="img__card-product">
+                  <Link to={"/detail"} className="img__card-product">
                     <img className="rounded " src={img} />
-                  </div>
-                  <div className="titles-card p-1 p-md-2">
+                  </Link>
+                  <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
                     <div>
                       <p className="fw-bold m-0">$100</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
