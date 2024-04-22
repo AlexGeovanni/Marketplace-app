@@ -44,6 +44,40 @@
   object-fit: cover;
 }
 
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  --swiper-theme-color:rgb(59, 55, 255);
+  background-color: rgba(255, 255, 255, 0.6);
+  --swiper-navigation-size: 25px;
+  height: 42px;
+  width: 42px;
+  padding: 4px;
+  margin-top: -24px;
+}
+.mySwiper .swiper-button-prev {
+  border-radius: 50px;
+  left: 1px;
+}
+.mySwiper .swiper-button-next {
+  border-radius: 50px;
+  right: 1px;
+}
+@media screen and (min-width: 768px) {
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next {
+    --swiper-navigation-size: 32px;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+  }
+  .mySwiper .swiper-button-prev {
+    left: -15px;
+  }
+  .mySwiper .swiper-button-next {
+    right: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .home-seccions .seccions {
     min-height: 80vh;
@@ -138,6 +172,17 @@
 
 .icon-filter {
   font-size: 25px;
+}
+
+.footer-container {
+  color: #ffffff;
+  background-color: #0e0e0e;
+}
+.footer-container > div:last-child {
+  background-color: #000000;
+}
+.footer-container .redes-lm a {
+  font-size: 30px;
 }
 
 /*!

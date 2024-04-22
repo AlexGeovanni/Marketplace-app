@@ -1,0 +1,12 @@
+.footer-container{
+    color: #ffffff;
+    background-color: #0e0e0e;
+    & > div:last-child{
+        background-color: #000000;
+    }
+    .redes-lm{
+        & a{
+                font-size: 30px;
+        }
+    }
+    }
