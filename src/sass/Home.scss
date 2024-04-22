@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   //background-color: rgb(51, 47, 255);
   .seccions {
-    min-height: 60vh;
+    min-height: 70vh;
     height: 100%;
   }
   & .container-home {
@@ -54,7 +54,6 @@
 }
 // product off
 
-
 .mySwiper{
   .swiper-button-prev,
   .swiper-button-next{
@@ -76,22 +75,20 @@
       right: 1px;
   }
 
-  @media screen and (min-width:768px) {
-      .swiper-button-prev,
-      .swiper-button-next{
-          --swiper-navigation-size: 32px;
-          height: 50px;
-          width: 50px;
-          margin-top: -25px;
+  .card-carousel{
+    min-width: 120px;
+    & .card-img{
+      min-height: 130px;
+      & img{
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/3.5;
       }
-      .swiper-button-prev{
-          left: -15px;
-      }
-      .swiper-button-next{
-          right: -15px;
-      }
+    }
   }
+
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -115,6 +112,26 @@
         }
       }
     }
+  }
+
+  .mySwiper{
+    .swiper-button-prev,
+      .swiper-button-next{
+          --swiper-navigation-size: 32px;
+          height: 50px;
+          width: 50px;
+          margin-top: -25px;
+      }
+      .swiper-button-prev{
+          left: -15px;
+      }
+      .swiper-button-next{
+          right: -15px;
+      }
+  }
+  .card-carousel{
+    min-width: 110px;
+    
   }
 }
 
