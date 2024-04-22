@@ -72,11 +72,9 @@ export default function ProductOff() {
             product.map((item) => {
                 return (
                   <SwiperSlide key={item.name}>
-                    <div className="cp ">
+                    <div className="cp card ">
                       <img
                         className=""
-                        width={width <768 ?  140: width < 992 && width >= 768? 220 : 200}
-                        height={200}
                         src={img1}
                         alt=""
                       />
