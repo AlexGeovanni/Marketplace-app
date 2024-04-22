@@ -2,7 +2,7 @@ import img1 from "../../assets/img-categorys/img-4.jpg";
 export default function PopularCategorys() {
     return(
         <>
-        <section className="seccions px-3 px-lg-4 mt-3 mt-md-5">
+        <section className="seccions border px-3 px-lg-4 mt-3 mt-md-5">
         <h2 className="fs-3">Lo que te puede interesar</h2>
         <div className="d-flex flex-wrap gap-4">
           <div className="cp ">

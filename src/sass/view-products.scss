@@ -1,0 +1,40 @@
+.products__container{
+    & .card-product {
+        width: 100%;
+        height: 100%;
+        & .img__card-product{
+            width: 100%;
+            min-height: 200px;
+            height: 300px;
+            & img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+                aspect-ratio: 3/2;
+            }
+        }
+        
+        .label-off__card-product{ 
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            right: 0;
+            border-radius: 4px;
+            padding:10px 6px;
+            
+            & > .icon-off{
+                font-size: 25px;
+                
+            }
+        }
+        .titles-card{
+            & > p:first-child{
+                max-width: 30ch;
+            }
+        }
+    }
+    
+}
+.icon-filter{
+    font-size: 25px;
+}

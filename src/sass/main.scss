@@ -9,9 +9,10 @@ $primary:#3b37ff;
 @import "../../node_modules/bootstrap/scss/mixins";
 
 // Contenido de bootstrap 
-$carousel-caption-width: 10%;
 @import "./Home.scss";
-$carousel-caption-width: 10%;
+@import "./Ropa-home.scss";
+@import "./view-products.scss";
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 .header-container{
@@ -19,6 +20,8 @@ $carousel-caption-width: 10%;
     width: 100%;
     margin: auto;
 }
+
+
 .user-icon{
     font-size: 35px;
 }
@@ -26,6 +29,9 @@ $carousel-caption-width: 10%;
 .navbar-toggler:focus{
     box-shadow: none ;
     border: none
+}
+.form-select:focus{
+  box-shadow: none ;
 }
 
 .dropdown-menu{
@@ -38,7 +44,7 @@ $carousel-caption-width: 10%;
 
 @media screen and (min-width:768px) {
     .seccions{
-        max-width: 1400px;
+        max-width: 1300px;
         margin: auto;
     }
 }

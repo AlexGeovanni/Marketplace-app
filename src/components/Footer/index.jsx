@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <footer className="footer-container seccions m-auto px-3 px-lg-4  mt-3 mt-md-5">
+      <footer className="footer-container  seccions  m-auto px-3 px-lg-4  mt-3 mt-md-5">
 
-        <div className="container-fluid p-2 py-md-3 d-flex justify-content-between gap-3 flex-wrap">
+        <div className=" p-2 py-md-3 d-flex justify-content-between gap-3 flex-wrap">
             <div className="">
                 <h3 className="fs-5">Vende</h3>
                 <p className="">Vender en local Marketplace</p>

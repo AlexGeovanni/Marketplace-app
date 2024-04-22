@@ -1,11 +1,10 @@
-import HomePage from "./Pages/Home-page"
+import Root from "./Routes/root"
+
 
 function App() {
 
   return (
-    <>
-    <HomePage />
-    </>
+    <Root />
   )
 }
 

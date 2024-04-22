@@ -1,47 +1,47 @@
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+          <Link className="nav-item text-decoration-none" to={"/"} >
+            <span className="nav-link active" aria-current="page" >
               Home
-            </a>
-          </li>
+            </span>
+          </Link>
 
           <li className="nav-item dropdown">
-            <a
+            <span
               className="nav-link dropdown-toggle"
-              href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Categorias
-            </a>
+            </span>
             <ul className="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
+              <Link className="text-decoration-none" to={"/categorys/ropa"}>
+                <a className="dropdown-item">
                   Ropa
                 </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
+              </Link>
+              <Link className="text-decoration-none" to={"/electronicos"}>
+                <a className="dropdown-item" >
                   Electronicos
                 </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
+              </Link>
+              <Link className="text-decoration-none" to={"/muebles"}>
+                <a className="dropdown-item" >
                   Muebles
                 </a>
-              </li>
+              </Link>
             </ul>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+          <Link className="nav-item text-decoration-none" to={"/dashboard"}>
+            <a className="nav-link" >
               Dashboard
             </a>
-          </li>
+          </Link>
         </ul>
       </div>
       
