@@ -1,6 +1,9 @@
 .footer-container{
     color: #ffffff;
     background-color: #0e0e0e;
+    & .seccions{
+        background-color: transparent;
+    }
     & > div:last-child{
         background-color: #000000;
     }

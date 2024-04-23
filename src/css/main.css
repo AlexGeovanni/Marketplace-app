@@ -1,4 +1,28 @@
 @charset "UTF-8";
+.header-container {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 12px;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-container {
+    padding: 0 100px;
+  }
+}
+
 .home-seccions {
   height: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/img-13.jpg");
@@ -8,8 +32,9 @@
   background-repeat: no-repeat;
 }
 .home-seccions .seccions {
-  min-height: 70vh;
+  min-height: 75vh;
   height: 100%;
+  background-color: transparent;
 }
 .home-seccions .container-home {
   height: 100%;
@@ -44,6 +69,14 @@
   object-fit: cover;
 }
 
+.container-popular .card-popular {
+  transition: all 0.3s ease-in-out;
+}
+.container-popular .card-popular:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
   --swiper-theme-color:rgb(59, 55, 255);
@@ -76,7 +109,7 @@
 
 @media screen and (min-width: 768px) {
   .home-seccions .seccions {
-    min-height: 80vh;
+    min-height: 85vh;
   }
   .home-seccions .container-home .text-home .btns__text-home {
     width: 100%;
@@ -109,7 +142,7 @@
     background-attachment: fixed;
   }
   .home-seccions .seccions {
-    min-height: 85vh;
+    min-height: 90vh;
   }
   .home-seccions .container-home .text-home .btns__text-home {
     max-width: 85%;
@@ -189,6 +222,9 @@
 .footer-container {
   color: #ffffff;
   background-color: #0e0e0e;
+}
+.footer-container .seccions {
+  background-color: transparent;
 }
 .footer-container > div:last-child {
   background-color: #000000;
@@ -12042,14 +12078,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.header-container {
-  max-width: 95%;
-  width: 100%;
-  margin: auto;
+html, body {
+  background-color: rgb(255, 255, 255);
+}
+
+.mt-seccions-index {
+  margin-top: 100px !important;
 }
 
 .user-icon {
-  font-size: 35px;
+  font-size: 45px;
+  color: #000000;
+}
+
+.icon-bag {
+  font-size: 30px;
+}
+
+.navbar-nav .nav-item span {
+  color: #000000 !important;
 }
 
 .navbar-toggler:focus {
@@ -12083,7 +12130,7 @@ label {
 }
 
 label span {
-  background: #bc2525;
+  background: #000000;
   border-radius: 10px;
   height: 3px;
   margin: 3px 0;
@@ -12108,7 +12155,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ span:nth-of-type(1) {
   transform-origin: bottom;
-  transform: rotatez(45deg) translate(2px, 0px);
+  transform: rotatez(45deg) translate(3px, 0px);
 }
 
 input[type=checkbox]:checked ~ span:nth-of-type(2) {
@@ -12119,7 +12166,7 @@ input[type=checkbox]:checked ~ span:nth-of-type(2) {
 input[type=checkbox]:checked ~ span:nth-of-type(3) {
   transform-origin: bottom;
   width: 50%;
-  transform: translate(14px, -3px) rotatez(45deg);
+  transform: translate(15px, -3px) rotatez(45deg);
 }
 
 /*# sourceMappingURL=main.css.map */

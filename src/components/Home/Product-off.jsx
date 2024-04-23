@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import img1 from "../../assets/img-13.jpeg";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 export default function ProductOff() {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -57,7 +57,7 @@ export default function ProductOff() {
 
   return (
     <>
-      <section className="seccions m-auto px-3 px-lg-4 mt-3 mt-md-5">
+      <section className="seccions m-auto p-3 py-4 px-lg-4 mt-3 mt-md-5">
         <h2>Local-marketplace ofertas</h2>
         <Swiper
           slidesPerView={
@@ -72,11 +72,18 @@ export default function ProductOff() {
           {product.map((item) => {
             return (
               <SwiperSlide key={item.name}>
-                <div className="cp card-carousel ">
-                  <div className="card-img">
+                <div className="cp card-carousel rounded overflow-hidden ">
+                  <div className="card-img  rounded overflow-hidden">
                     <img className="" src={img1} alt="" />
                   </div>
-                  <p className=" m-0 text-center">{item.name}</p>
+                  <Link to={"/detail"} className=" text-decoration-none text-dark ">
+                    <p className=" m-0 text-truncate">
+                      sudadera para hombres solo colore verde
+                    </p>
+                    <div>
+                      <p className="fw-bold m-0">$100</p>
+                    </div>
+                  </Link>
                 </div>
               </SwiperSlide>
             );

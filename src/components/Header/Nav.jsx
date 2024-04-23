@@ -5,7 +5,7 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <Link className="nav-item text-decoration-none" to={"/"} >
-            <span className="nav-link active" aria-current="page" >
+            <span className="nav-link" aria-current="page" >
               Home
             </span>
           </Link>
@@ -30,17 +30,12 @@ export default function Navbar() {
                   Electronicos
                 </a>
               </Link>
-              <Link className="text-decoration-none" to={"/muebles"}>
-                <a className="dropdown-item" >
-                  Muebles
-                </a>
-              </Link>
             </ul>
           </li>
           <Link className="nav-item text-decoration-none" to={"/dashboard"}>
-            <a className="nav-link" >
+            <span className="nav-link" >
               Dashboard
-            </a>
+            </span>
           </Link>
         </ul>
       </div>

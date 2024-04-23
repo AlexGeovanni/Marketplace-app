@@ -1,5 +1,6 @@
 // Home
 .home-seccions {
+  
   height: 100%;
   background-image: linear-gradient(
       to right,
@@ -13,8 +14,9 @@
   background-repeat: no-repeat;
   //background-color: rgb(51, 47, 255);
   .seccions {
-    min-height: 70vh;
+    min-height: 75vh;
     height: 100%;
+    background-color: transparent;
   }
   & .container-home {
     height: 100%;
@@ -52,8 +54,18 @@
   }
  
 }
-// product off
+// popular container
+.container-popular{
+  & .card-popular {
+    transition: all 0.3s ease-in-out;
+     &:hover{
+       transform: scale(1.05);
+       transition: all 0.3s ease-in-out;
+     }
+  }
+}
 
+// product off
 .mySwiper{
   .swiper-button-prev,
   .swiper-button-next{
@@ -95,7 +107,7 @@
   // Home
   .home-seccions {
     .seccions {
-      min-height: 80vh;
+      min-height: 85vh;
     }
     & .container-home {
       & .text-home {
@@ -140,7 +152,7 @@
     background-attachment: fixed;
     //background-color: rgb(51, 47, 255);
     .seccions {
-      min-height: 85vh;
+      min-height: 90vh;
     }
     & .container-home {
         & .text-home {

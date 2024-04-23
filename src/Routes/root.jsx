@@ -12,6 +12,7 @@ export default function Root() {
           <Route path="/" element={<HomePage />} exact />
           <Route path="/categorys/ropa" element={<HomeRopaPage />} exact />
           <Route path="/categorys/ropa/:name" element={<ViewProductsPage />} exact />
+          <Route path="/electronicos" element={<ViewProductsPage />} exact />
           <Route path="/detail" element={<DetailViewPage />} />
         </Routes>
       </Router>

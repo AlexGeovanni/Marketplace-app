@@ -1,39 +1,43 @@
-import img1 from "../../assets/img-categorys/img-4.jpg";
+
+import img2 from "../../assets/img-16.jpeg";
+import img3 from "../../assets/img-17.webp";
+import img4 from "../../assets/man-ropa.jpeg";
+
 export default function PopularCategorys() {
     return(
         <>
-        <section className="seccions  px-3 px-lg-4 mt-3 mt-md-5">
+        <section className="seccions container-popular p-3 py-md-4 px-lg-4 mt-3 mt-md-5">
         <h2 className="fs-3">Lo que te puede interesar</h2>
-        <div className="d-flex flex-wrap gap-4">
-          <div className="cp ">
+        <div className="d-flex flex-wrap gap-4 mt-2 mt-md-4">
+          <div className="cp card-popular d-flex flex-column align-items-center">
             <img
               className="rounded-circle "
               width={100}
               height={100}
-              src={img1}
+              src={img4}
               alt=""
             />
-            <p className=" m-0 text-center">Electronicos</p>
+            <p className=" m-0 text-center">Ropa de hombre</p>
           </div>
-          <div className="cp ">
+          <div className="cp card-popular d-flex flex-column align-items-center">
             <img
               className="rounded-circle "
               width={100}
               height={100}
-              src={img1}
+              src={img3}
               alt=""
             />
-            <p className=" m-0 text-center">Electronicos</p>
+            <p className=" m-0 text-center">Celular</p>
           </div>
-          <div className="cp ">
+          <div className="cp card-popular d-flex flex-column align-items-center">
             <img
               className="rounded-circle "
               width={100}
               height={100}
-              src={img1}
+              src={img2}
               alt=""
             />
-            <p className=" m-0 text-center">Electronicos</p>
+            <p className=" m-0 text-center">Empezar a vender</p>
           </div>
         </div>
       </section>

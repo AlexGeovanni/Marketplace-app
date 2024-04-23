@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function ViewProducts() {
   return (
     <>
-      <section className="seccions m-auto px-3 px-lg-4  mt-3 mt-md-5">
+      <section className="seccions mt-seccions-index m-auto p-3 py-md-4 px-lg-4  mt-3 mt-md-5">
         <div className="container__view-products">
           <header className="options p-1 py-2 py-md-3 d-flex justify-content-between align-items-center">
             <div className="d-none d-lg-flex gap-4">
@@ -16,7 +16,7 @@ export default function ViewProducts() {
                 className="form-select rounded-1"
                 aria-label="Default select example"
               >
-                <option hidden>Tipo de producto</option>
+                <option value="all">Todos</option>
                 <option value="1">Sudadera</option>
                 <option value="2">Jeans</option>
                 <option value="3">Calzado</option>
@@ -45,7 +45,7 @@ export default function ViewProducts() {
             </div>
           </header>
           <div className="products__container ">
-            <div className="row g-2 g-md-3">
+            <div className="row g-2 g-md-4">
               <div className="col-6 col-md-4 col-lg-3">
                 <div className="card-product position-relative overflow-hidden rounded  d-flex flex-column align-items-stretch">
                   <div className="label-off__card-product position-absolute  bg-warning d-flex flex-column">

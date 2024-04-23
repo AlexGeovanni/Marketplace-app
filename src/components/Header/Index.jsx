@@ -1,6 +1,6 @@
 import Navbar from "./Nav";
 
-import { CiShoppingCart } from "react-icons/ci";
+import { IoBagOutline } from "react-icons/io5";
 import UserDropdown from "./user-drop";
 
 const logo = (
@@ -47,17 +47,18 @@ const logo = (
 export default function Header() {
   return (
     <>
-      <header className="header-container  d-flex align-items-start py-2 py-md-3">
+      <header className="header-container  d-flex align-items-start py-3 ">
         <nav className="navbar container-fluid navbar-expand-lg py-0">
-          <div className="container-fluid ">
+          <div className="container-fluid  p-0">
             <div className="cp">{logo}</div>
-
             <Navbar />
           </div>
         </nav>
-        <div className="d-flex align-items-center gap-3">
-          <CiShoppingCart className="user-icon cp" />
+        <div className="d-flex align-items-center gap-2">
+          <div className="d-flex align-items-center gap-2 ms-1 ps-3">
+          <IoBagOutline className="user-icon cp icon-bag" />
           <UserDropdown />
+          </div>
 
           <label id="icon-header" className="d-lg-none" htmlFor="check"
            data-bs-toggle="collapse"

@@ -4,7 +4,7 @@ import img from "../../assets/img-10.jpg"
 
 export default function DetailView(){
     return(
-        <section className="seccions container-page-important details mx-auto mt-4 ">
+        <section className="seccions mt-seccions-index  details mx-auto mt-4 ">
                 <div className=" row  py-2 py-lg-4 px-lg-2 m-0">
                         <div className="col-12 col-lg-8 row m-0 p-0">
                             <div className="col-12 col-lg-7">
