@@ -24,7 +24,7 @@ export default function DetailView(){
                                 </div>
                                 <div className="mt-2">
                                     <p className="fw-light mb-1">Tamaño:</p> 
-                                    <select className="w-75 w-md-25  form-select" value={"selectSize"} aria-label="Default select example">
+                                    <select className="w-75 w-md-25 rounded-0  form-select" value={"selectSize"} aria-label="Default select example">
                                         <option  defaultValue="" hidden>Seleciona una opción</option>
                                         
                                     </select>
@@ -32,18 +32,18 @@ export default function DetailView(){
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 mt-4 mt-lg-0">
-                            <div className="bg-dark bg-opacity-10 rounded p-4 py-3 mb-5">
+                            <div className="bg-dark bg-opacity-10 rounded-0 p-4 py-3 mb-5">
                                 <p>Puntos de entregas</p>
                                 <span className="fw-light">Margaritas, plaza sendero, macroplaza, centro</span>
                                 
                             </div>
 
                             
-                        <button  className="w-100 btn btn-primary border-0 p-0" disabled={ false} >
-                                <Link to="/car-shop"  className="text-decoration-none text-white btn w-100 py-2 border" >Comprar ahora</Link>
+                        <button  className="w-100 btn btn-primary rounded-0 border-0 p-0" disabled={ false} >
+                                <Link to="/car-shop"  className="text-decoration-none rounded-0  text-white btn w-100 py-2 border" >Comprar ahora</Link>
                             </button>
                             
-                            <button className="btn btn-primary w-100 mt-3 py-2 " disabled={ false}>Agregar a mi bolsa</button> 
+                            <button className="btn rounded-0  btn-primary w-100 mt-3 py-2 " disabled={ false}>Agregar a mi bolsa</button> 
                         </div>
                 </div>
                 <div className='mt-4 p-4'>

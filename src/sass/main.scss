@@ -1,6 +1,6 @@
 
 $primary:#3b37ff;
-
+$headings-font-family:"Oswald", sans-serif;
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
@@ -19,9 +19,10 @@ $primary:#3b37ff;
 
 html, body{
   background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
 }
 .mt-seccions-index {
-  margin-top: 100px !important;
+  margin-top: 75px !important;
 }
 .user-icon{
     font-size: 45px;

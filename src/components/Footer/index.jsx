@@ -27,6 +27,7 @@ export default function Footer() {
                 href="https://www.facebook.com/LocalMarketplace-101507707707707/"
                 target="_blank"
                 rel="noreferrer"
+                className="text-white"
               >
                 <FaFacebook/>
               </a>

@@ -72,8 +72,8 @@ export default function ProductOff() {
           {product.map((item) => {
             return (
               <SwiperSlide key={item.name}>
-                <div className="cp card-carousel rounded overflow-hidden ">
-                  <div className="card-img  rounded overflow-hidden">
+                <div className="cp card-carousel  ">
+                  <div className="card-img  ">
                     <img className="" src={img1} alt="" />
                   </div>
                   <Link to={"/detail"} className=" text-decoration-none text-dark ">

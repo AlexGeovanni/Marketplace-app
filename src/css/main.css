@@ -25,24 +25,17 @@
 
 .home-seccions {
   height: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/img-13.jpg");
-  background-attachment: local;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
 }
 .home-seccions .seccions {
-  min-height: 75vh;
+  min-height: 70vh;
   height: 100%;
-  background-color: transparent;
 }
 .home-seccions .container-home {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(2px);
 }
 .home-seccions .container-home .text-home {
-  color: #ffffff;
+  color: #000000;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .home-seccions .container-home .text-home > div {
@@ -60,26 +53,36 @@
   justify-content: center;
 }
 .home-seccions .container-home .img__container-home div {
-  width: 320px;
+  width: 240px;
   height: 100%;
 }
 .home-seccions .container-home .img__container-home div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  mask-image: linear-gradient(#f2f2f2 80%, transparent);
 }
 
 .container-popular .card-popular {
+  max-width: 300px;
+  width: 130px;
+  height: 100%;
   transition: all 0.3s ease-in-out;
 }
 .container-popular .card-popular:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+.container-popular .card-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+}
 
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
-  --swiper-theme-color:rgb(59, 55, 255);
+  --swiper-theme-color: rgb(59, 55, 255);
   background-color: rgba(255, 255, 255, 0.6);
   --swiper-navigation-size: 25px;
   height: 42px;
@@ -88,11 +91,9 @@
   margin-top: -24px;
 }
 .mySwiper .swiper-button-prev {
-  border-radius: 50px;
   left: 1px;
 }
 .mySwiper .swiper-button-next {
-  border-radius: 50px;
   right: 1px;
 }
 .mySwiper .card-carousel {
@@ -118,7 +119,7 @@
     padding: 12px 0;
   }
   .home-seccions .container-home .img__container-home div {
-    width: 100%;
+    width: 350px;
   }
   .mySwiper .swiper-button-prev,
   .mySwiper .swiper-button-next {
@@ -136,10 +137,13 @@
   .card-carousel {
     min-width: 110px;
   }
+  .container-popular .card-popular {
+    width: 250px;
+  }
 }
 @media screen and (min-width: 992px) {
   .home-seccions {
-    background-attachment: fixed;
+    background-size: auto;
   }
   .home-seccions .seccions {
     min-height: 90vh;
@@ -149,6 +153,16 @@
   }
   .home-seccions .container-home .text-home .btns__text-home button {
     padding: 15px 0;
+  }
+  .home-seccions .container-home .img__container-home div {
+    width: 100%;
+    height: 100%;
+  }
+  .home-seccions .container-home .img__container-home div img {
+    width: auto;
+  }
+  .container-popular .card-popular {
+    width: 300px;
   }
 }
 .card__menu-ropa {
@@ -221,7 +235,7 @@
 
 .footer-container {
   color: #ffffff;
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 .footer-container .seccions {
   background-color: transparent;
@@ -451,6 +465,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
@@ -12080,10 +12095,11 @@ textarea.form-control-lg {
 }
 html, body {
   background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
 }
 
 .mt-seccions-index {
-  margin-top: 100px !important;
+  margin-top: 75px !important;
 }
 
 .user-icon {

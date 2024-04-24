@@ -13,7 +13,7 @@ export default function ViewProducts() {
           <header className="options p-1 py-2 py-md-3 d-flex justify-content-between align-items-center">
             <div className="d-none d-lg-flex gap-4">
               <select
-                className="form-select rounded-1"
+                className="form-select rounded-0"
                 aria-label="Default select example"
               >
                 <option value="all">Todos</option>
@@ -22,7 +22,7 @@ export default function ViewProducts() {
                 <option value="3">Calzado</option>
               </select>
               <select
-                className="form-select rounded-1"
+                className="form-select rounded-0"
                 aria-label="Default select example"
               >
                 <option hidden>Ordenar por</option>
@@ -47,13 +47,13 @@ export default function ViewProducts() {
           <div className="products__container ">
             <div className="row g-2 g-md-4">
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product position-relative overflow-hidden rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product position-relative overflow-hidden   d-flex flex-column align-items-stretch">
                   <div className="label-off__card-product position-absolute  bg-warning d-flex flex-column">
                     <IoIosFlash className="icon-off text-dark  " />
                     <p className="m-0">-20%</p>
                   </div>
                   <Link to={"/detail"} className="img__card-product">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
@@ -69,9 +69,9 @@ export default function ViewProducts() {
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product  rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product    d-flex flex-column align-items-stretch">
                   <Link to={"/detail"} className="img__card-product ">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
@@ -84,9 +84,9 @@ export default function ViewProducts() {
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product  rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product    d-flex flex-column align-items-stretch">
                   <Link to={"/detail"} className="img__card-product">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
@@ -99,9 +99,9 @@ export default function ViewProducts() {
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product  rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product    d-flex flex-column align-items-stretch">
                   <Link to={"/detail"} className="img__card-product">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
@@ -114,9 +114,9 @@ export default function ViewProducts() {
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product  rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product    d-flex flex-column align-items-stretch">
                   <Link to={"/detail"} className="img__card-product">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">
@@ -129,9 +129,9 @@ export default function ViewProducts() {
                 </div>
               </div>
               <div className="col-6 col-md-4 col-lg-3">
-                <div className="card-product  rounded  d-flex flex-column align-items-stretch">
+                <div className="card-product    d-flex flex-column align-items-stretch">
                   <Link to={"/detail"} className="img__card-product">
-                    <img className="rounded " src={img} />
+                    <img className=" " src={img} />
                   </Link>
                   <Link to={"/detail"} className="titles-card text-decoration-none text-dark p-1 p-md-2">
                     <p className=" m-0 text-truncate">

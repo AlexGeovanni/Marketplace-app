@@ -1,19 +1,17 @@
 
 import img2 from "../../assets/img-16.jpeg";
 import img3 from "../../assets/img-17.webp";
-import img4 from "../../assets/man-ropa.jpeg";
+import img4 from "../../assets/img-categorys/man-ropa.jpeg";
 
 export default function PopularCategorys() {
     return(
         <>
         <section className="seccions container-popular p-3 py-md-4 px-lg-4 mt-3 mt-md-5">
         <h2 className="fs-3">Lo que te puede interesar</h2>
-        <div className="d-flex flex-wrap gap-4 mt-2 mt-md-4">
+        <div className="d-flex flex-wrap gap-2 mt-2 mt-md-4">
           <div className="cp card-popular d-flex flex-column align-items-center">
             <img
-              className="rounded-circle "
-              width={100}
-              height={100}
+              className=""
               src={img4}
               alt=""
             />
@@ -21,9 +19,7 @@ export default function PopularCategorys() {
           </div>
           <div className="cp card-popular d-flex flex-column align-items-center">
             <img
-              className="rounded-circle "
-              width={100}
-              height={100}
+              className=""
               src={img3}
               alt=""
             />
@@ -31,9 +27,7 @@ export default function PopularCategorys() {
           </div>
           <div className="cp card-popular d-flex flex-column align-items-center">
             <img
-              className="rounded-circle "
-              width={100}
-              height={100}
+              className=""
               src={img2}
               alt=""
             />

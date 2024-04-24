@@ -8,20 +8,20 @@ export default function Ropaindex() {
       <section className="menu-ropa seccions mt-seccions-index  m-auto p-3 py-md-4 px-lg-4  mt-3 mt-md-5">
         <div className="container__menu-ropa  gy-2 gx-0 gy-md-0 row  ">
           <Link to={"mujer"} className="text-decoration-none col-6 col-md-4 p-1  ">
-            <div className="card__menu-ropa cp rounded position-relative overflow-hidden  d-flex flex-column align-items-center">
-              <img className="rounded " src={img} />
+            <div className="card__menu-ropa cp  position-relative overflow-hidden  d-flex flex-column align-items-center">
+              <img className=" " src={img} />
               <p className=" fw-semibold m-0 text-center">Mujer</p>
             </div>
           </Link>
           <Link to={"hombre"} className="text-decoration-none col-6 col-md-4 p-1 ">
-            <div className="card__menu-ropa cp rounded position-relative overflow-hidden  d-flex flex-column align-items-center">
-              <img className="rounded " src={img} />
+            <div className="card__menu-ropa cp  position-relative overflow-hidden  d-flex flex-column align-items-center">
+              <img className=" " src={img} />
               <p className=" fw-semibold m-0 text-center">Hombres</p>
             </div>
           </Link>
           <Link to={"kids"} className="text-decoration-none col-6 col-md-4 p-1 ">
-            <div className="card__menu-ropa cp rounded position-relative overflow-hidden d-flex flex-column align-items-center">
-              <img className="rounded " src={img} />
+            <div className="card__menu-ropa cp  position-relative overflow-hidden d-flex flex-column align-items-center">
+              <img className=" " src={img} />
               <p className=" fw-semibold m-0 text-center">Kids</p>
             </div>
           </Link>

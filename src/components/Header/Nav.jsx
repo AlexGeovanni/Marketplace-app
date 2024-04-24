@@ -19,7 +19,7 @@ export default function Navbar() {
             >
               Categorias
             </span>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu rounded-0">
               <Link className="text-decoration-none" to={"/categorys/ropa"}>
                 <a className="dropdown-item">
                   Ropa

@@ -18,7 +18,7 @@ export default function AsideFilter() {
         <div className="offcanvas-body d-flex flex-column align-items-start gap-2">
         <div className="opacity-75 fw-semibold">Productos total:15</div>
               <select
-                className="form-select rounded-1"
+                className="form-select rounded-0"
                 aria-label="Default select example"
               >
                 <option hidden>Tipo de producto</option>
@@ -27,7 +27,7 @@ export default function AsideFilter() {
                 <option value="3">Calzado</option>
               </select>
               <select
-                className="form-select rounded-1"
+                className="form-select rounded-0"
                 aria-label="Default select example"
               >
                 <option hidden>Ordenar por</option>
