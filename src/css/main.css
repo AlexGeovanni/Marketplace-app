@@ -3,8 +3,7 @@
   max-width: 100%;
   width: 100%;
   margin: auto;
-  background-color: white;
-  backdrop-filter: blur(8px);
+  background-color: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -46,7 +45,7 @@
 .home-seccions .container-home .text-home .btns__text-home {
   width: 100%;
 }
-.home-seccions .container-home .text-home .btns__text-home button {
+.home-seccions .container-home .text-home .btns__text-home .btn-button {
   padding: 10px 0;
 }
 .home-seccions .container-home .img__container-home {
@@ -12102,7 +12101,7 @@ textarea.form-control-lg {
   }
 }
 html, body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(248, 248, 248);
   font-family: "Roboto", sans-serif;
 }
 
@@ -12128,7 +12127,8 @@ html, body {
   border: none;
 }
 
-.form-select:focus {
+.form-select:focus,
+.form-control:focus {
   box-shadow: none;
 }
 

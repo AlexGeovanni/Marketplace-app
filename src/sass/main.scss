@@ -19,7 +19,7 @@ $headings-font-family:"Oswald", sans-serif;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 html, body{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(248, 248, 248);
   font-family: "Roboto", sans-serif;
 }
 .mt-seccions-index {
@@ -40,7 +40,8 @@ html, body{
     box-shadow: none ;
     border: none
 }
-.form-select:focus{
+.form-select:focus,
+.form-control:focus{
   box-shadow: none ;
 }
 

@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 
-export default function SingUpPersonal(){
+export default function SingUpPersonal({clickChangePanel}){
     return (
         <div className="container__client">
         <div className="text-center  px-3">
@@ -63,9 +64,7 @@ export default function SingUpPersonal(){
               Password
             </label>
           </div>
-          <p>
-            ¿Ya tienes cuenta? <span>Entrar</span>
-          </p>
+          <p className=" m-0 mt-3 ">¿Ya tienes cuenta? <a className="cp link-offset-2 link-underline link-underline-opacity-100" onClick={clickChangePanel}  >Entrar</a></p>
           <button
             type="submit"
             className="btn rounded-0 btn-primary w-100 mt-3"

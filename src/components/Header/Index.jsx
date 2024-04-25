@@ -1,5 +1,5 @@
+import { useState, useEffect } from "react";
 import Navbar from "./Nav";
-
 import { IoBagOutline } from "react-icons/io5";
 import UserDropdown from "./user-drop";
 
@@ -45,9 +45,21 @@ const logo = (
 );
 
 export default function Header() {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeight(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="header-container  d-flex align-items-start py-3 ">
+      <header className={`header-container  d-flex align-items-start py-3 ${height && "bg-white"} `}>
         <nav className="navbar container-fluid navbar-expand-lg py-0">
           <div className="container-fluid  p-0">
             <div className="cp">{logo}</div>
@@ -56,16 +68,20 @@ export default function Header() {
         </nav>
         <div className="d-flex align-items-center gap-2">
           <div className="d-flex align-items-center gap-2 ms-1 ps-3">
-          <IoBagOutline className="user-icon cp icon-bag" />
-          <UserDropdown />
+            <IoBagOutline className="user-icon cp icon-bag" />
+            <UserDropdown />
           </div>
 
-          <label id="icon-header" className="d-lg-none" htmlFor="check"
-           data-bs-toggle="collapse"
-           data-bs-target="#navbarSupportedContent"
-           aria-controls="navbarSupportedContent"
-           aria-expanded="false"
-           aria-label="Toggle navigation">
+          <label
+            id="icon-header"
+            className="d-lg-none"
+            htmlFor="check"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <input type="checkbox" id="check" />
             <span></span>
             <span></span>
