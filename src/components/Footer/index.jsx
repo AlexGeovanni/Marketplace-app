@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer-container   mt-3 mt-md-5">
-        <div className=" seccions  m-auto px-3 px-lg-4 py-2  py-lg-4  d-flex justify-content-between gap-3 flex-wrap">
+        <div className=" seccions  m-auto px-3 p-lg-4 py-4   d-flex justify-content-between gap-3 flex-wrap">
           <div className="">
             <h3 className="fs-5">Vende</h3>
             <p className="">Vender en local Marketplace</p>

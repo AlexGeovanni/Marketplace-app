@@ -8,14 +8,12 @@ export default function Home() {
       <section className="home-seccions mt-seccions-index">
         <div className="seccions  px-3 px-lg-4 d-flex flex-column justify-content-center ">
           <div className="container-home  row g-0 ">
-            <div className="text-home   col-12 col-md-6 col-lg-7   ">
-              <div className=" p-2 py-md-4 d-flex flex-column justify-content-center align-items-center align-items-md-start ">
-                <h1 className="fw-bold">Local Marketplace</h1>
-                <div className="text-center text-md-start">
-                  <h2 className="fs-1">Empieza ahora como nuesto cliente o vendedor</h2>
+            <div className="text-home mt-5 mt-md-2 m-lg-0  col-12 col-md-6 col-lg-7   ">
+              <div className=" text__container-home text-center d-flex flex-column justify-content-center align-items-center  ">
+                <h1 className="">Local Marketplace</h1>
+                  <h2 className="" >Empieza ahora como nuestro cliente o vendedor.</h2>
                   <p className="">Descubre locales de en Tijuana, BC.</p>
-                </div>
-                <div className="btns__text-home   d-flex gap-2 mt-2 mt-md-3">
+                <div className="btns__text-home    d-flex gap-2 mt-2 mt-md-3">
                   <button className="btn rounded-0 w-100 btn-primary  ">
                     Comprar ahora
                   </button>

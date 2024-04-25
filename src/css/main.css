@@ -36,7 +36,9 @@
 }
 .home-seccions .container-home .text-home {
   color: #000000;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.home-seccions .container-home .text-home .text__container-home h1, .home-seccions .container-home .text-home .text__container-home .h1 {
+  font-size: 45px;
 }
 .home-seccions .container-home .text-home > div {
   height: 100%;
@@ -64,10 +66,10 @@
 }
 
 .container-popular .card-popular {
-  max-width: 300px;
-  width: 130px;
-  height: 100%;
   transition: all 0.3s ease-in-out;
+}
+.container-popular .card-popular p {
+  font-size: 15px;
 }
 .container-popular .card-popular:hover {
   transform: scale(1.05);
@@ -77,7 +79,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 3/2;
+  aspect-ratio: 4/3;
 }
 
 .mySwiper .swiper-button-prev,
@@ -137,8 +139,8 @@
   .card-carousel {
     min-width: 110px;
   }
-  .container-popular .card-popular {
-    width: 250px;
+  .container-popular .card-popular p {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -146,10 +148,13 @@
     background-size: auto;
   }
   .home-seccions .seccions {
-    min-height: 90vh;
+    min-height: 80vh;
   }
-  .home-seccions .container-home .text-home .btns__text-home {
-    max-width: 85%;
+  .home-seccions .container-home .text-home .text__container-home {
+    max-width: 90%;
+  }
+  .home-seccions .container-home .text-home .text__container-home h1, .home-seccions .container-home .text-home .text__container-home .h1 {
+    font-size: 65px;
   }
   .home-seccions .container-home .text-home .btns__text-home button {
     padding: 15px 0;
@@ -159,10 +164,9 @@
     height: 100%;
   }
   .home-seccions .container-home .img__container-home div img {
-    width: auto;
-  }
-  .container-popular .card-popular {
-    width: 300px;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/3;
   }
 }
 .card__menu-ropa {
@@ -219,7 +223,6 @@
   align-items: center;
   top: 0;
   right: 0;
-  border-radius: 4px;
   padding: 10px 6px;
 }
 .products__container .card-product .label-off__card-product > .icon-off {
@@ -230,7 +233,7 @@
 }
 
 .icon-filter {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .footer-container {
@@ -245,6 +248,11 @@
 }
 .footer-container .redes-lm a {
   font-size: 30px;
+}
+
+.container__client {
+  max-width: 450px;
+  width: 100%;
 }
 
 /*!

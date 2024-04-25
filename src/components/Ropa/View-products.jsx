@@ -1,5 +1,5 @@
 import img from "../../assets/img-13.jpeg";
-import { BsFilter } from "react-icons/bs";
+import { BsFilterLeft } from "react-icons/bs";
 import { IoIosFlash } from "react-icons/io";
 import AsideFilter from "./Aside-filter";
 
@@ -37,7 +37,7 @@ export default function ViewProducts() {
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              <BsFilter className="cp icon-filter" />
+              <BsFilterLeft className="cp icon-filter" />
             </div>
             <AsideFilter />
             <div className="opacity-75 fw-semibold d-none d-lg-block">
@@ -59,8 +59,8 @@ export default function ViewProducts() {
                     <p className=" m-0 text-truncate">
                       sudadera para hombres solo colore verde
                     </p>
-                    <div>
-                      <span className="text-decoration-line-through text-danger me-2">
+                    <div className="d-flex justify-content-between">
+                      <span className="text-decoration-line-through d-block text-danger me-2">
                         $MXN150
                       </span>
                       <p className="fw-bold d-inline m-0">$MXN100</p>

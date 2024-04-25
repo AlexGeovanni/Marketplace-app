@@ -58,7 +58,8 @@ export default function ProductOff() {
   return (
     <>
       <section className="seccions m-auto p-3 py-4 px-lg-4 mt-3 mt-md-5">
-        <h2>Local-marketplace ofertas</h2>
+        <h2 className="">Local-marketplace ofertas</h2>
+        <div className="mt-4">
         <Swiper
           slidesPerView={
             width < 768 ? 2.2 : width < 992 && width >= 768 ? 3 : 5
@@ -67,7 +68,7 @@ export default function ProductOff() {
           loop={true}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="mySwiper "
         >
           {product.map((item) => {
             return (
@@ -89,6 +90,7 @@ export default function ProductOff() {
             );
           })}
         </Swiper>
+        </div>
       </section>
     </>
   );
