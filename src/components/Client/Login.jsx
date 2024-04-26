@@ -10,7 +10,7 @@ export default function Login({clickChangePanel}){
   })
 
   const onSubmit=async(data) => {console.log("data",data)}
-  console.log(errors)
+  
     return(
         <div className="container-user__client ">
             <div className="text-center  px-3">
@@ -32,7 +32,7 @@ export default function Login({clickChangePanel}){
             <div className="form-floating">
               <input
                 type="password "
-                className={`form-control rounded-0 ${errors.email?.message && "is-invalid"  } `}
+                className={`form-control rounded-0 ${errors.password?.message && "is-invalid"  } `}
                 id="floatingPassword"
                 placeholder="Password"
                 {...register("password")}

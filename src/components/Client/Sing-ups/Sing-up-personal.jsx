@@ -23,6 +23,7 @@ export default function SingUpPersonal({ clickChangePanel, clickTypeAccount,type
             name="options-base"
             id="0"
             autoComplete="off"
+            readOnly
             checked={typeAccount}
             onClick={clickTypeAccount}
           />
@@ -40,6 +41,7 @@ export default function SingUpPersonal({ clickChangePanel, clickTypeAccount,type
             name="options-base"
             id="1"
             autoComplete="off"
+            readOnly
             checked={!typeAccount}
             onClick={clickTypeAccount}
           />

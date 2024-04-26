@@ -4,12 +4,12 @@
 //import ProductCard from './ProductCard';
 import SubTotals from './SubTotals';
 import EmptyCart from './EmptyCart';
-
+import {CustomHook} from '../CustomHook';
 
 export default function BagShop(){
 
-    const addProductCar=[]
-
+ 
+    const { products} = CustomHook()
     let Subtotal = 0;
     let Discount = 0;
     return(
@@ -21,7 +21,7 @@ export default function BagShop(){
                 </div>
                 <div className="row position-relative">
                     <div className="col-12 col-lg-8 ">
-                        { addProductCar.length == 0 ? <EmptyCart /> : 
+                        { products == 0 ? <EmptyCart /> : 
                         <div className="bg-white rounded">
                             <div className="py-2 d-none d-lg-flex">
                                 <p className="col-6 m-0 text-center">Producto</p>

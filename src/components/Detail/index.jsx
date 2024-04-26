@@ -1,8 +1,10 @@
 
 import { Link } from "react-router-dom"
 import img from "../../assets/img-10.jpg"
+import {CustomHook} from "../CustomHook"
 
 export default function DetailView(){
+    const { handleAddProducts} = CustomHook()
     return(
         <section className="seccions mt-seccions-index  details mx-auto mt-4 ">
                 <div className=" row  py-2 py-lg-4 px-lg-2 m-0">
@@ -39,11 +41,11 @@ export default function DetailView(){
                             </div>
 
                             
-                        <button  className="w-100 btn btn-primary rounded-0 border-0 p-0" disabled={ false} >
-                                <Link to="/car-shop"  className="text-decoration-none rounded-0  text-white btn w-100 py-2 border" >Comprar ahora</Link>
+                        <button  className="w-100 btn btn-primary rounded-0 border-0 p-0"  disabled={ false} >
+                                <Link to="/car-shop"  className="text-decoration-none rounded-0  text-white btn w-100 py-2 border"  >Comprar ahora</Link>
                             </button>
                             
-                            <button className="btn rounded-0  btn-primary w-100 mt-3 py-2 " disabled={ false}>Agregar a mi bolsa</button> 
+                            <button className="btn rounded-0  btn-primary w-100 mt-3 py-2 " onClick={handleAddProducts}  >Agregar a mi bolsa</button> 
                         </div>
                 </div>
                 <div className='mt-4 p-4'>
