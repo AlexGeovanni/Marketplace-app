@@ -21,14 +21,14 @@ export default function Navbar() {
             </span>
             <ul className="dropdown-menu rounded-0">
               <Link className="text-decoration-none" to={"/categorys/ropa"}>
-                <a className="dropdown-item">
+                <span className="dropdown-item w-100" href="#" >
                   Ropa
-                </a>
+                </span>
               </Link>
               <Link className="text-decoration-none" to={"/electronicos"}>
-                <a className="dropdown-item" >
+                <span className="dropdown-item w-100"  >
                   Electronicos
-                </a>
+                </span>
               </Link>
             </ul>
           </li>

@@ -249,9 +249,16 @@
   font-size: 30px;
 }
 
-.container__client {
+.container-client {
+  min-height: 70vh;
+}
+.container-client .container-user__client {
   max-width: 450px;
   width: 100%;
+}
+
+.container-profile {
+  min-height: 50vh;
 }
 
 /*!

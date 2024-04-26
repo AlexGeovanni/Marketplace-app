@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Nav";
 import { IoBagOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import UserDropdown from "./user-drop";
 
 const logo = (
@@ -49,7 +50,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setHeight(window.scrollY > 100);
+      setHeight(window.scrollY > 60);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -59,7 +60,11 @@ export default function Header() {
 
   return (
     <>
-      <header className={`header-container  d-flex align-items-start py-3 ${height && "bg-white"} `}>
+      <header
+        className={`header-container  d-flex align-items-start py-3 ${
+          height && "bg-white"
+        } `}
+      >
         <nav className="navbar container-fluid navbar-expand-lg py-0">
           <div className="container-fluid  p-0">
             <div className="cp">{logo}</div>
@@ -68,7 +73,9 @@ export default function Header() {
         </nav>
         <div className="d-flex align-items-center gap-2">
           <div className="d-flex align-items-center gap-2 ms-1 ps-3">
-            <IoBagOutline className="user-icon cp icon-bag" />
+            <Link to={"/bagmarket"}>
+              <IoBagOutline className="user-icon cp icon-bag" />
+            </Link>
             <UserDropdown />
           </div>
 

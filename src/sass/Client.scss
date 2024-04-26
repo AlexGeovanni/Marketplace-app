@@ -1,6 +1,8 @@
 
-
-.container__client{
-    max-width: 450px;
-    width: 100%;
+.container-client {
+    min-height: 70vh;
+    .container-user__client {
+        max-width: 450px;
+        width: 100%;
+    }
 }
