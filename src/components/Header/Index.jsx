@@ -3,7 +3,7 @@ import Navbar from "./Nav";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import UserDropdown from "./user-drop";
-import CustomHook from "../CustomHook";
+
 const logo = (
   <svg
     width="80"
@@ -47,7 +47,6 @@ const logo = (
 
 export default function Header() {
   const [height, setHeight] = useState(0);
-  const { products } = CustomHook();
   useEffect(() => {
     const handleScroll = () => {
       setHeight(window.scrollY > 60);
@@ -75,9 +74,7 @@ export default function Header() {
           <div className="d-flex align-items-center gap-2 ms-1 ps-3">
             <Link to={"/bagmarket"} className="position-relative ">
               <IoBagOutline className="user-icon cp icon-bag" />
-              {products > 0 && (
-                <span className="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
-              )}
+              
             </Link>
             <UserDropdown />
           </div>

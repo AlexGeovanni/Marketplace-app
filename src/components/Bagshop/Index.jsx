@@ -10,6 +10,7 @@ export default function BagShop(){
 
  
     const { products} = CustomHook()
+    console.log(products)
     let Subtotal = 0;
     let Discount = 0;
     return(
